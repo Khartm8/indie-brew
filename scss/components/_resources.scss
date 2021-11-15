@@ -1,0 +1,44 @@
+.resources {
+    padding: 8rem 0;
+    background-color: white;
+
+    @include mobile {
+        padding: 2.1rem 0 5.9rem;
+    }
+
+    &__info {
+        max-width: 63.7rem;
+        font-size: 1.8rem;
+        line-height: 1.5;
+
+        @include tablet {
+            max-width: 58%;
+        }
+
+        @include mobile {
+            max-width: 100%;
+            order: 1;
+        }
+    }
+
+    &__img {
+        width: 36.8rem;
+        height: 17.6rem;
+        object-fit: contain;
+
+        @include tablet {
+            width: 26.4rem;
+            height: 12.6rem;
+        }
+
+        @include mobile {
+            width: 37.5rem;
+            height: 17.9rem;
+            margin-bottom: 3.2rem;
+        }
+
+        @include mobile-small {
+            width: 100%;
+        }
+    }
+}

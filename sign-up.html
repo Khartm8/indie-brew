@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndieBrew</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="body-singup">
+
+    <!-- Header -->
+
+    <header class="header">
+        <div class="wrapper">
+            <nav class="nav">
+                <a href="./" class="logo">
+                    <img src="./Assets/Logo.svg" alt="Logo" class="logo__img">
+                    IndieBrew
+                </a>
+                <a href="./" class="back">
+                    <div class="back__btn">
+                        <img src="./Assets/Back Arrow.svg" alt="Back arrow" class="back__arrow">
+                    </div>
+                    <span class="back__text">
+                        Back to homepage
+                    </span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sing up container -->
+
+    <section class="sign-up">
+        <div class="wrapper">
+            <div class="sign-up__wrapper">
+                <section class="sign-up__info">
+                    <h1 class="sign-up__title">Create your personalized feed.</h1>
+                    <p class="sign-up__subtitle">
+                        <b>Over 20 resources.</b> With resources ranging from Reddit to IndieHackers, we’ve got all your needs covered.
+                    </p>
+                    <p class="sign-up__subtitle">
+                        <b>Delivered weekly.</b> Every week at exactly Tuesday 12:00 P.M. EST — expect a value-packed digest right in your email.
+                    </p>
+                    <p class="sign-up__subtitle">
+                        <b>Unlimited ideas.</b> With all the ideas you’ll be reading about, what’s stopping you from creating a sustainable startup?
+                    </p>
+                </section>
+                <form class="sign-up__form form">
+                    <h2 class="form__title">Create your IndieBrew Account</h2>
+                    <div class="form__item">
+                        <label for="email" class="form__name">Email</label>
+                        <input type="email" name="email" id="" placeholder="john@example.com" class="form__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="name" class="form__name">Full Name</label>
+                        <input type="text" name="name" id="" placeholder="John Doe" class="form__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="password" class="form__name">Password</label>
+                        <input type="password" name="password" id="" placeholder="At least 8 characters" class="form__input">
+                    </div>
+                    <div class="form__tos tos">
+                        <input type="checkbox" name="" id="" class="tos__checkbox">
+                        <p class="tos__text">
+                            By creating an account on IndieBrew, you agree to the <a href="#" class="tos__link">Terms & Conditions</a>.
+                        </p>
+                    </div>
+                    <!-- <button class="create-account">Create an Account</button> -->
+                    <input type="submit" value="Create an Account" class="tos__btn">
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <script src="./js/scroll.js"></script>
+</body>
+</html>

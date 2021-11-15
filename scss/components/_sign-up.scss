@@ -1,0 +1,170 @@
+.sign-up {
+    padding: 14.6rem 0 0;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+
+    &__info {
+       max-width: 39%;
+
+       @include tablet {
+           max-width: 100%;
+           margin-bottom: 4rem;
+       }
+
+       @include mobile {
+           margin-bottom: 3.1rem;
+       }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 3.6rem;
+        line-height: 4.6rem;
+        color: black;
+        margin-bottom: 2.4rem;
+    }
+
+    &__subtitle {
+        position: relative;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        color: black;
+        padding-left: 3.8rem;
+        margin-bottom: 2.4rem;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &:nth-of-type(1)::before {
+            content: "🎈";
+            position: absolute;
+            left: 0;
+        }
+
+        &:nth-of-type(2)::before {
+            content: "🗞️";
+            position: absolute;
+            left: 0;
+        }
+
+        &:nth-of-type(3)::before {
+            content: "💡";
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    &__form {
+        max-width: 49%;
+        padding: 5.7rem 6rem;
+        background: white;
+        border-radius: 10px;
+
+        @include tablet {
+            max-width: 100%;
+            padding: 5.7rem 7.2rem;
+        }
+        
+        @include mobile {
+            padding: 3.7rem 4rem 2.9rem;
+        }
+    }
+}
+
+.form {
+    font-size: 1.8rem;
+    line-height: 1.5;
+
+    &__title {
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 3.1rem;
+        color: black;
+        margin-bottom: 3.2rem;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3.2rem;
+    }
+
+    &__name {
+        font-weight: 700;
+        color: black;
+        margin-bottom: .8rem;
+    }
+
+    &__input {
+        padding: 1.8rem 2.4rem;
+        border: 1px solid $onemoreGray;
+        border-radius: 5px;
+        font-family: inherit;
+        font-size: inherit;
+        color: black;
+
+        &::placeholder {
+            color: $lastGray;
+        }
+    }
+
+    &__tos {
+        font-family: 'Inter', sans-serif;
+        color: black;
+    }
+
+    &__tos-link {
+        font-weight: 700;
+        color: $purple;
+        text-decoration: underline;
+    }
+}
+
+.tos {
+    display: flex;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    margin-bottom: 3.2rem;
+
+    &__checkbox {
+       flex-shrink: 0;
+       width: 2rem;
+       height: 2rem;
+       cursor: pointer;
+       margin-right: 1rem;
+    }
+
+    &__link {
+        font-weight: 700;
+        color: $purple;
+        text-decoration: underline;
+    }
+    
+    &__btn {
+        width: 100%;
+        padding: 1.8rem 0;
+        border: 0;
+        border-radius: 5px;
+        background: $purple;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+        color: white;
+        cursor: pointer;
+
+        &:hover, &:focus, &:active {
+            background: $darkPurple;
+        }
+    }
+}

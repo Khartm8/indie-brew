@@ -1,0 +1,13 @@
+@import './global/variables';
+@import './global/mixins';
+@import './global/reset';
+@import './global/base';
+@import './global/layout';
+
+
+@import './components/header';
+@import './components/hero';
+@import './components/resources';
+@import './components/phone-section';
+@import './components/footer';
+@import './components/sign-up'

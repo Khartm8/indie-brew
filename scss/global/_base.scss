@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @include mobile-small {
+        font-size: 45%;
+    }
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    background: $gradient no-repeat;
+    color: $primaryGray;
+    overflow-x: hidden;
+}
+
+.body-singup {
+    height: 100vh;
+    background: radial-gradient(50% 128% at 50% 50%, rgba(193, 67, 252, 0.3) 0%, rgba(255, 221, 255, 0.6) 100%);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
